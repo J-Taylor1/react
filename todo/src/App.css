@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
 .App {
   text-align: center;
 }
@@ -14,14 +16,14 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #201925;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(84, 148, 207);
 }
 
 .App-link {
@@ -35,4 +37,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.todo{
+  font-family: 'Rubik', sans-serif;
+  color: rgb(255, 176, 85);
+}
+
+.input{
+  background-color: #1eacd3;
+  color: rgb(209, 218, 96);
 }

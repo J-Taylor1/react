@@ -2,10 +2,12 @@ import logo from './tek_logo.png';
 import './App.css';
 import NavBar from './Components/NavBar';
 import Headlines from './Views/Headlines';
-import Sports from './Views/Sports';
-import Weather from './Views/Weather';
-import Politics from './Views/Politics';
+import Jokes from './Views/Jokes';
+import Studiog from './Views/Studiog';
+import Space from './Views/Space';
 import Footer from './Components/Footer';
+import { Switch, Route} from 'react-router-dom';
+
 
 function App() {
   return (
@@ -17,10 +19,22 @@ function App() {
          <br/>
           <p>Create a News Site</p>
           <p>Set up a Single Page Application (SPA) with react-router</p>
-          <Headlines/>
-          <Sports/>
-          <Weather/>
-          <Politics/>
+            
+            <Switch>
+              <Route exact path="/">
+              <Headlines/>
+              </Route>
+              <Route path='/jokes'>
+               <Jokes/>
+              </Route>
+              <Route path='/movie'>
+               <Studiog/>
+              </Route>
+              <Route path='/space'>
+               <Space/>
+              </Route>
+            </Switch>
+
         </div>
       </header>
       <Footer/>
